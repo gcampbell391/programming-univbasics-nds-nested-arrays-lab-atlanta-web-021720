@@ -22,7 +22,7 @@ end
 
 def sorted_matrix
   sorted_matrix = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
-  sorted_matrix
+  sorted_matrix.sort { |a, b| a <=> b }
 end
 
 def matrix_lookup(matrix, row, column)
